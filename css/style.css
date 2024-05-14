@@ -1,0 +1,629 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* reset page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+/* variables global */
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --third-color: #bababa;
+  --text-color: #fff;
+  --main-color: rgb(34, 122, 238);
+  --menu-color: #161616;
+  --error-color: #d83200;
+  --success-color: #08a900;
+}
+
+/* initial settings*/
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--second-bg-color);
+  color: var(--text-color);
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+/* End initial settings */
+
+/* styles header */
+.top-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.top-header.tik {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navbar a {
+  font-size: 1.7rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--text-color);
+  display: none;
+}
+
+/* styles section home*/
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content h1 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.home-content h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2) {
+  margin-bottom: 2rem;
+}
+
+span {
+  color: var(--main-color);
+}
+
+.home-content p {
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+.home-img img {
+  width: 30vw;
+}
+/* End section home*/
+
+/* social media */
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 3rem 1.5rem 3rem 0;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+
+  background: transparent;
+  color: var(--main-color);
+
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+
+  transition: 0.5s ease;
+}
+
+.social-media a:hover {
+  background: var(--main-color);
+  color: var(--second-bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+
+  background-color: var(--main-color);
+  color: var(--second-bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+
+  border-radius: 4rem;
+
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+/* End social-media */
+
+/* about */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  background-color: var(--second-bg-color);
+}
+
+.about-img img {
+  width: 30vw;
+}
+
+.heading {
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+.about-content h2 {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.about-content h3 {
+  font-size: 2.6rem;
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  text-align: justify;
+  margin: 2rem 0 3rem;
+}
+/* End about */
+
+/* habilidades */
+.habilidades h2 {
+  margin-bottom: 5rem;
+}
+
+.habilidades-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.habilidades-container .habilidades-box {
+  flex: 1 1 30rem;
+  background: var(--bg-color);
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 0.2rem solid var(--second-bg-color);
+  transition: 0.5s ease;
+}
+
+.habilidades-container .habilidades-box:hover {
+  border-color: var(--main-color);
+  transform: scale(1.03);
+}
+
+.habilidades-box i {
+  font-size: 7rem;
+  color: var(--main-color);
+}
+
+.habilidades-box h3 {
+  font-size: 2.6rem;
+}
+
+.habilidades-box p {
+  font-size: 1.6rem;
+  margin: 1rem 0 3rem;
+}
+/* End habilidades */
+
+/* passtime */
+.passtime {
+  background-color: var(--second-bg-color);
+}
+
+.passtime h2 {
+  margin-bottom: 5rem;
+}
+
+.passtime-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.passtime-container .passtime-box {
+  flex: 1 1 30rem;
+  background: var(--bg-color);
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 0.2rem solid var(--second-bg-color);
+  transition: 0.5s ease;
+}
+
+.passtime-container .passtime-box:hover {
+  border-color: var(--main-color);
+  transform: scale(1.03);
+}
+
+.passtime-box i {
+  font-size: 7rem;
+  color: var(--main-color);
+}
+
+.passtime-box h3 {
+  font-size: 2.6rem;
+}
+
+passtime-box p {
+  font-size: 1.6rem;
+  margin: 1rem 0 3rem;
+}
+/* End passtime */
+
+/* historia */
+.historia h2 {
+  margin-bottom: 5rem;
+}
+
+.historia-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  width: 100%;
+}
+
+.historia-container h3 {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.boxinit,
+.xpb {
+  margin: 3rem 0;
+}
+
+.boxinit h4,
+.xpb h4 {
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: var(--main-color);
+  padding: 0.1rem 0;
+}
+
+.boxinit p,
+.xpb p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 0.1rem 0;
+}
+
+.training-icon,
+.experience-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+  color: var(--third-color);
+}
+
+.training-icon i,
+.experience-icon i {
+  color: var(--main-color);
+}
+/* End historia */
+
+/* projetos */
+.projetos h2 {
+  margin-bottom: 4rem;
+  color: rgb(255, 255, 255);
+}
+
+.projetos-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.projetos-container .projetos-box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg_color);
+  overflow: hidden;
+  display: flex;
+  color: rgb(13, 64, 233);
+}
+
+.projetos-box img {
+  width: 300px;
+  height: 240px;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.projetos-box:hover img {
+  transform: scale(1.1);
+}
+
+.projetos-box .projetos-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(38, 38, 38, 0.8), var(--main_color));
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: 0.5s ease;
+}
+
+.projetos-box:hover .projetos-layer {
+  transform: translateY(0);
+}
+.foto {
+  filter: drop-shadow(10px 10px 10px rgba(13, 87, 199, 0.829));
+}
+.projetos-layer h4 {
+  font-size: 3rem;
+  color: var(--main_color);
+}
+
+.projetos-layer p {
+  font-size: 1.6rem;
+  margin: 0.3rem 0 1rem;
+}
+
+.projetos-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--text_color);
+  border-radius: 50%;
+  transition: 0.2s ease;
+}
+
+.projetos-layer a i {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.projetos-layer a:hover {
+  background-color: var(--second_bg_color);
+  box-shadow: 0 0 0.2rem var(--main_color);
+}
+
+.projetos-layer a:hover i {
+  color: var(--text_color);
+  transform: scale(1.06);
+}
+/*End projetos*/
+
+/* Contacts */
+.contato h2 {
+  margin-bottom: 3rem;
+}
+
+.error-message {
+  visibility: hidden;
+  font-size: 2rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.error-message.visibled {
+  visibility: visible;
+}
+
+.contato form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contato form .input-box {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+.contato form .input-box input,
+.contato form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--text_color);
+  background-color: var(--bg_color);
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+}
+
+.contato form .input-box input {
+  width: 49%;
+}
+
+.contato form textarea {
+  resize: none;
+}
+
+.contato form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+/* End Contacts */
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  padding: 2rem 9%;
+  background-color: var(--bg_color);
+}
+
+.footer-text p {
+  font-size: 1.6rem;
+  margin-right: 4rem;
+}
+
+.footer-iconTop {
+  display: none;
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background-color: var(--main_color);
+  border-radius: 0.8rem;
+}
+
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem var(--main_color);
+}
+
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: var(--second_bg_color);
+}
+/* End Footer */
+
+/* Responsive */
+@media screen and (max-width: 1180px) {
+  html {
+    font-size: 55%;
+  }
+
+  .navbar a,
+  .projetos-layer h4,
+  .projetos-layer p {
+    font-size: 1.9rem; /* Ajuste geral para itens do navbar e projeto */
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  html {
+    overflow: scroll;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    background: transparent;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+  }
+
+  .footer {
+    position: static;
+  }
+
+  .footer-iconTop {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  section {
+    padding: 10rem 3% 2rem;
+  }
+
+  .habilidades,
+  .passtime,
+  .projetos {
+    padding-bottom: 7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home,
+  .about {
+    flex-direction: column;
+  }
+
+  .home-content h1 {
+    font-size: 4rem;
+  }
+
+  .home-img img,
+  .about-img img {
+    width: 70vw;
+  }
+
+  .projetos-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .contato form .input-box input,
+  .contato form textarea {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .home-img img,
+  .about-img img {
+    width: 90vw;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+  }
+}
+
+/* End Responsive */
